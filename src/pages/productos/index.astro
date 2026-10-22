@@ -1,0 +1,19 @@
+---
+// src/pages/productos/index.astro
+// Catálogo completo. Reusa ProductGrid, que ya trae los filtros (especie,
+// categoría, marca, tipo de alimento, kg de regalo y búsqueda) y lee los
+// query params que usan los links del menú: ?especie=perro&cat=alimentos-secos
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProductGrid from '../../components/ProductGrid.astro';
+---
+
+<BaseLayout
+  title="Todos los productos"
+  description="Alimento, camas, higiene y snacks para perros y gatos."
+>
+  <ProductGrid
+    title="Todos los productos"
+    subtitle="Alimento, camas, higiene y snacks para perros y gatos."
+  />
+</BaseLayout>
