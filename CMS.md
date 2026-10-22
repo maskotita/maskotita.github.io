@@ -106,6 +106,25 @@ npm run token -- ghp_XXXXXXXXXXXXXXXX
 El script consulta la API de GitHub y te dice si el token sirve y, si no,
 **qué permiso falta**. Sólo hace `GET`: no escribe ni modifica nada.
 
+### Publicar los cambios del código (./up.sh)
+
+Cuando tocás el código (no el contenido del panel) hay que subirlo a GitHub
+para que GitHub Pages lo publique:
+
+```bash
+./up.sh
+```
+
+El script te pide el **Personal Access Token** de forma oculta — no se ve en
+pantalla ni queda en el historial — y lo valida antes de subir. Después lo
+guarda en la caché de credenciales de git (en memoria, no en disco) por 8
+horas, así los siguientes push no vuelven a preguntar nada.
+
+> **Por qué no funciona el login normal de git:** GitHub eliminó la
+> autenticación por contraseña en 2021. En el prompt "Password for
+> 'https://github.com'" hay que pegar el *token*, no la contraseña de la
+> cuenta. `up.sh` ya lo resuelve por vos.
+
 > Alternativa: un token clásico con el scope `repo` también sirve
 > (Settings → Developer settings → Personal access tokens → Tokens (classic)).
 
