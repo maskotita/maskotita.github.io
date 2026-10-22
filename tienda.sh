@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# tienda.sh — levanta la tienda ManáPets (patitas-store, Astro estático)
+# tienda.sh — levanta la tienda Maskotita (patitas-store, Astro estático)
 #
 # Uso:
 #   ./tienda.sh              compila y sirve en primer plano (Ctrl+C para cortar)

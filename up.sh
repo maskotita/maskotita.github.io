@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# up.sh — sube la tienda ManáPets a GitHub y prepara GitHub Pages
+# up.sh — sube la tienda Maskotita a GitHub y prepara GitHub Pages
 #
 # Uso:
 #   ./up.sh          sube los cambios a la rama main
@@ -9,7 +9,7 @@
 set -euo pipefail
 
 APP_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-REPO_URL="https://github.com/manapets/manapets.github.io.git"
+REPO_URL="https://github.com/maskotita/maskotita.github.io.git"
 
 log()  { printf '\033[1;32m▶\033[0m %s\n' "$*"; }
 warn() { printf '\033[1;33m!\033[0m %s\n' "$*" >&2; }
@@ -37,13 +37,13 @@ case "${1:-up}" in
 
     log "Subiendo cambios a GitHub"
     git add .
-    git commit -m "Tienda ManáPets con panel de admin Decap CMS" || true
+    git commit -m "Tienda Maskotita con panel de admin Sveltia CMS" || true
     git push -u origin main
 
     log "Listo. Ahora en GitHub:"
     log "  1. Settings → Pages → Source: GitHub Actions"
     log "  2. Esperá a que el workflow termine (pestaña Actions)"
-    log "  3. Tu sitio: https://manapets.github.io/"
+    log "  3. Tu sitio: https://maskotita.github.io/"
     ;;
 
   *)

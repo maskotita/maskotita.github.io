@@ -9,11 +9,11 @@ const IMAGES = join(ROOT, 'public', 'images');
 
 const VIEWS = ['Frente', 'Lateral', 'Detalle'];
 
-const NAVY = ['#0D2B3E', '#123A50', '#1D4C63'];
-const ACCENTS = ['#F58A3C', '#5AE0D5', '#F26D6D', '#9B59B6', '#F1C40F'];
+const DEEP = ['#40306B', '#2E2150', '#513C86'];
+const ACCENTS = ['#FFD166', '#FF8C42', '#EF476F', '#7B61FF', '#FFE29A'];
 let paletteIndex = 0;
 function nextPalette() {
-  const base = NAVY[paletteIndex % NAVY.length];
+  const base = DEEP[paletteIndex % DEEP.length];
   const accent = ACCENTS[paletteIndex % ACCENTS.length];
   paletteIndex++;
   return { base, accent };
@@ -85,14 +85,14 @@ for (const file of files) {
 
 // --- Imágenes del sitio (hero, promos, categorías) ---
 const site = [
-  { path: 'hero/hero-1.svg', width: 1600, height: 900, label: 'Alimento seco y húmedo', brand: 'Mana Pet Shop', subtitle: 'Hasta 25% OFF en marcas seleccionadas', base: '#0D2B3E', accent: '#F58A3C' },
-  { path: 'hero/hero-2.svg', width: 1600, height: 900, label: 'Kgs de regalo', brand: 'Mana Pet Shop', subtitle: 'En alimentos seleccionados de 7,5kg y 15kg', base: '#123A50', accent: '#5AE0D5' },
-  { path: 'promos/destacado-1.svg', width: 800, height: 800, label: 'Envío gratis', brand: 'Gran Mendoza', subtitle: 'En compras sobre $30.000', base: '#0D2B3E', accent: '#F1C40F' },
-  { path: 'promos/destacado-2.svg', width: 800, height: 800, label: '3 cuotas sin interés', brand: 'Mercado Pago', subtitle: 'Sobre $150.000', base: '#1D4C63', accent: '#9B59B6' },
-  { path: 'promos/kg-regalo.svg', width: 900, height: 700, label: 'Alimentos con kg de regalo', brand: 'Promo', subtitle: 'Aprovechá los combos', base: '#0D2B3E', accent: '#9B59B6' },
-  { path: 'promos/reintegros.svg', width: 900, height: 700, label: 'Reintegros en cada compra', brand: 'Beneficio', subtitle: '5% para tu próxima compra', base: '#123A50', accent: '#5AE0D5' },
-  { path: 'categories/perros.svg', width: 1000, height: 800, label: 'Perros', brand: 'Cachorro · Adulto · Senior', subtitle: '', base: '#0D2B3E', accent: '#F58A3C' },
-  { path: 'categories/gatos.svg', width: 1000, height: 800, label: 'Gatos', brand: 'Cachorro · Adulto · Castrado', subtitle: '', base: '#1D4C63', accent: '#5AE0D5' },
+  { path: 'hero/hero-1.svg', width: 1600, height: 900, label: 'Alimento seco y húmedo', brand: 'Maskotita', subtitle: 'Hasta 25% OFF en marcas seleccionadas', base: '#40306B', accent: '#FFD166' },
+  { path: 'hero/hero-2.svg', width: 1600, height: 900, label: 'Kgs de regalo', brand: 'Maskotita', subtitle: 'En alimentos seleccionados de 7,5kg y 15kg', base: '#2E2150', accent: '#FF8C42' },
+  { path: 'promos/destacado-1.svg', width: 800, height: 800, label: 'Envío gratis', brand: 'Gran Mendoza', subtitle: 'En compras sobre $30.000', base: '#40306B', accent: '#FFE29A' },
+  { path: 'promos/destacado-2.svg', width: 800, height: 800, label: '3 cuotas sin interés', brand: 'Mercado Pago', subtitle: 'Sobre $150.000', base: '#513C86', accent: '#7B61FF' },
+  { path: 'promos/kg-regalo.svg', width: 900, height: 700, label: 'Alimentos con kg de regalo', brand: 'Promo', subtitle: 'Aprovechá los combos', base: '#40306B', accent: '#7B61FF' },
+  { path: 'promos/reintegros.svg', width: 900, height: 700, label: 'Reintegros en cada compra', brand: 'Beneficio', subtitle: '5% para tu próxima compra', base: '#2E2150', accent: '#FFD166' },
+  { path: 'categories/perros.svg', width: 1000, height: 800, label: 'Perros', brand: 'Cachorro · Adulto · Senior', subtitle: '', base: '#40306B', accent: '#FF8C42' },
+  { path: 'categories/gatos.svg', width: 1000, height: 800, label: 'Gatos', brand: 'Cachorro · Adulto · Castrado', subtitle: '', base: '#513C86', accent: '#FFD166' },
 ];
 
 for (const s of site) {
@@ -104,8 +104,8 @@ for (const s of site) {
 
 // --- Favicon propio (huella) ---
 const favicon = `<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#0D2B3E"/>
-  ${paw(32, 34, 8, '#5AE0D5')}
+  <rect width="64" height="64" rx="14" fill="#40306B"/>
+  ${paw(32, 34, 8, '#FFD166')}
 </svg>`;
 await writeFile(join(ROOT, 'public', 'favicon.svg'), favicon, 'utf8');
 count++;

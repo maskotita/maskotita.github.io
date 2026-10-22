@@ -92,12 +92,12 @@ describe('discount code persistence', () => {
   });
 
   it('guarda y lee el código', () => {
-    cart.setDiscountCode('PLUSPET10');
-    expect(cart.getDiscountCode()).toBe('PLUSPET10');
+    cart.setDiscountCode('MASCOTITA10');
+    expect(cart.getDiscountCode()).toBe('MASCOTITA10');
   });
 
   it('limpia el código con null', () => {
-    cart.setDiscountCode('PLUSPET10');
+    cart.setDiscountCode('MASCOTITA10');
     cart.setDiscountCode(null);
     expect(cart.getDiscountCode()).toBeNull();
   });

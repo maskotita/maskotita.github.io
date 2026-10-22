@@ -3,7 +3,7 @@ import { STORE } from '../config';
 import Paw from './Paw.astro';
 
 /**
- * Hero principal de marca: título "Mana Pet Shop" con las palabras en color,
+ * Hero principal de marca: título "Maskotita" con las palabras en color,
  * botón naranja "Ver Productos" y mascota geométrica (formas redondeadas,
  * colores exactos del logotipo). No reemplaza ningún comportamiento.
  */
@@ -17,7 +17,7 @@ const paws = [
 
 <section class="container-page pt-8">
   <div
-    class="relative overflow-hidden rounded-[var(--radius-xl)] bg-gradient-to-br from-[#E3FAF8] via-white to-[#FFF0E2] px-6 py-10 sm:px-12 sm:py-14"
+    class="relative overflow-hidden rounded-[var(--radius-xl)] bg-gradient-to-br from-[#F1ECFF] via-white to-[#FFF4DC] px-6 py-10 sm:px-12 sm:py-14"
   >
     <!-- Huellas decorativas moradas -->
     <div class="pointer-events-none absolute inset-0" aria-hidden="true">
@@ -41,9 +41,8 @@ const paws = [
         </span>
 
         <h1 class="mt-4 text-5xl font-extrabold leading-[1.05] tracking-tight sm:text-6xl">
-          <span class="text-brand-ink">Mana</span>{' '}
-          <span class="text-brand-orange">Pet</span>{' '}
-          <span class="text-brand-aqua">Shop</span>
+          <span class="text-brand-ink">Masko</span>{' '}
+          <span class="text-brand-coral">tita</span>
         </h1>
 
         <p class="mt-4 max-w-lg text-lg font-semibold text-foreground">{STORE.tagline}</p>
@@ -61,34 +60,34 @@ const paws = [
           viewBox="0 0 240 240"
           class="h-56 w-56 drop-shadow-sm sm:h-72 sm:w-72"
           role="img"
-          aria-label="Mascota Mana Pet Shop"
+          aria-label="Mascota Maskotita"
         >
-          <!-- orejas (turquesa, como en el logotipo) -->
-          <path d="M52 92 C40 54 44 40 60 34 C74 29 96 44 106 56 Z" fill="#5AE0D5" stroke="#0D2B3E" stroke-width="9" stroke-linejoin="round"></path>
-          <path d="M188 92 C200 54 196 40 180 34 C166 29 144 44 134 56 Z" fill="#5AE0D5" stroke="#0D2B3E" stroke-width="9" stroke-linejoin="round"></path>
+          <!-- orejas (mango, como en el logotipo) -->
+          <path d="M52 92 C40 54 44 40 60 34 C74 29 96 44 106 56 Z" fill="#FFD166" stroke="#40306B" stroke-width="9" stroke-linejoin="round"></path>
+          <path d="M188 92 C200 54 196 40 180 34 C166 29 144 44 134 56 Z" fill="#FFD166" stroke="#40306B" stroke-width="9" stroke-linejoin="round"></path>
           <!-- cabeza -->
-          <circle cx="120" cy="132" r="86" fill="#5AE0D5" stroke="#0D2B3E" stroke-width="9"></circle>
+          <circle cx="120" cy="132" r="86" fill="#FFD166" stroke="#40306B" stroke-width="9"></circle>
           <!-- bigotes -->
-          <g stroke="#0D2B3E" stroke-width="6" stroke-linecap="round" opacity="0.75">
+          <g stroke="#40306B" stroke-width="6" stroke-linecap="round" opacity="0.75">
             <path d="M8 126h30"></path>
             <path d="M8 152h30"></path>
             <path d="M202 126h30"></path>
             <path d="M202 152h30"></path>
           </g>
           <!-- mejillas -->
-          <circle cx="74" cy="162" r="13" fill="#F26D6D" opacity="0.35"></circle>
-          <circle cx="166" cy="162" r="13" fill="#F26D6D" opacity="0.35"></circle>
+          <circle cx="74" cy="162" r="13" fill="#EF476F" opacity="0.35"></circle>
+          <circle cx="166" cy="162" r="13" fill="#EF476F" opacity="0.35"></circle>
           <!-- ojos -->
-          <circle cx="94" cy="126" r="10.5" fill="#0D2B3E"></circle>
-          <circle cx="146" cy="126" r="10.5" fill="#0D2B3E"></circle>
+          <circle cx="94" cy="126" r="10.5" fill="#40306B"></circle>
+          <circle cx="146" cy="126" r="10.5" fill="#40306B"></circle>
           <circle cx="97.5" cy="122" r="3.6" fill="#FFFFFF"></circle>
           <circle cx="149.5" cy="122" r="3.6" fill="#FFFFFF"></circle>
           <!-- nariz -->
-          <path d="M120 148l11 9h-22z" fill="#F26D6D"></path>
+          <path d="M120 148l11 9h-22z" fill="#EF476F"></path>
           <!-- boca -->
-          <path d="M120 157v9" stroke="#0D2B3E" stroke-width="7" stroke-linecap="round" fill="none"></path>
-          <path d="M120 166c-7 8-20 6-26-3" stroke="#0D2B3E" stroke-width="7" stroke-linecap="round" fill="none"></path>
-          <path d="M120 166c7 8 20 6 26-3" stroke="#0D2B3E" stroke-width="7" stroke-linecap="round" fill="none"></path>
+          <path d="M120 157v9" stroke="#40306B" stroke-width="7" stroke-linecap="round" fill="none"></path>
+          <path d="M120 166c-7 8-20 6-26-3" stroke="#40306B" stroke-width="7" stroke-linecap="round" fill="none"></path>
+          <path d="M120 166c7 8 20 6 26-3" stroke="#40306B" stroke-width="7" stroke-linecap="round" fill="none"></path>
         </svg>
       </div>
     </div>

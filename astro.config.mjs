@@ -12,7 +12,7 @@ import tailwindcss from '@tailwindcss/vite';
  * Para agregar otro dominio, sumalo a esta lista.
  */
 const ALLOWED_HOSTS = [
-  'mamapetshop.webbot.ar',
+  'maskotita.webbot.ar',
   '.webbot.ar',
   'localhost',
   '127.0.0.1',
@@ -22,7 +22,7 @@ const ALLOWED_HOSTS = [
 // Cambiá `site` por tu dominio final (Netlify o custom domain).
 // Se usa para sitemap, canonical URLs y metadatos.
 export default defineConfig({
-  site: 'https://manapets.github.io/',
+  site: 'https://maskotita.github.io/',
   base: '/',
   output: 'static',
   compressHTML: true,

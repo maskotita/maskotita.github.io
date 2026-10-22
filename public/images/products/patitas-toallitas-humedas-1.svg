@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-label="Toallitas Húmedas para Mascotas">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0D2B3E"/>
-      <stop offset="0.55" stop-color="#0D2B3E"/>
-      <stop offset="1" stop-color="#F58A3C"/>
+      <stop offset="0" stop-color="#40306B"/>
+      <stop offset="0.55" stop-color="#40306B"/>
+      <stop offset="1" stop-color="#FFD166"/>
     </linearGradient>
     <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
       <path d="M 72 0 L 0 0 0 72" fill="none" stroke="rgba(255,255,255,0.16)" stroke-width="1.5"/>

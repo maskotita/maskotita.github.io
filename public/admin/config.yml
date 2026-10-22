@@ -1,6 +1,6 @@
 # ============================================================================
-#  Mana Pet Shop — Panel de administración
-#  https://manapets.github.io/admin
+#  Maskotita — Panel de administración
+#  https://maskotita.github.io/admin
 #
 #  Este archivo define QUÉ se puede editar desde el panel y DÓNDE se guarda.
 #  Cada vez que guardás un cambio, el panel hace un "commit" al repositorio de
@@ -13,7 +13,7 @@
 
 backend:
   name: github
-  repo: manapets/manapets.github.io
+  repo: maskotita/maskotita.github.io
   branch: main
 
   # ------------------------------------------------------------------
@@ -28,7 +28,7 @@ backend:
   #  extra (proxy) — que es lo que ninguna tienda necesita.
   #
   #  El token necesita:
-  #    - alcance al repo manapets/manapets.github.io
+  #    - alcance al repo maskotita/maskotita.github.io
   #    - permiso "Contents: Read and write" (si usás Editorial Workflow,
   #      también "Pull requests: Read and write")
   #    - un token clásico con el scope "repo" también sirve
@@ -310,5 +310,5 @@ collections:
             widget: list
             required: false
             fields:
-              - { label: Código, name: code, widget: string, hint: "Ej: PLUSPET10 (se guarda en mayúsculas)" }
+              - { label: Código, name: code, widget: string, hint: "Ej: MASCOTITA10 (se guarda en mayúsculas)" }
               - { label: Descuento, name: rate, widget: number, value_type: float, step: 0.01, min: 0, hint: "En decimal. 0.1 = 10%" }

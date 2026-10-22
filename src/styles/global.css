@@ -2,37 +2,37 @@
 
 /*
  * ============================================================================
- *  MANA PET SHOP — Sistema de diseño
+ *  MASKOTITA — Sistema de diseño
  *  Fondo blanco puro, estilo amigable / redondeado / "cartoon".
- *  Paleta extraída del logotipo oficial (ver tokens --color-brand-*).
+ *  Paleta Maskotita: violeta profundo + mango + rosa coral.
  * ============================================================================
  */
 
 @theme {
-  /* ----- Paleta oficial del logotipo ----- */
-  --color-brand-ink: #0D2B3E; /* Azul oscuro profundo — texto y títulos ("Mana") */
-  --color-brand-aqua: #5AE0D5; /* Turquesa / cian — acento ("Shop", orejas del gato) */
-  --color-brand-orange: #F58A3C; /* Naranja — llamados a la acción ("Pet") */
-  --color-brand-coral: #F26D6D; /* Coral / salmón — ofertas y alertas (la "P") */
-  --color-brand-purple: #9B59B6; /* Morado — decorativo, huellas */
-  --color-brand-yellow: #F1C40F; /* Amarillo — valoraciones y badges "Nuevo" */
+  /* ----- Paleta Maskotita ----- */
+  --color-brand-ink: #40306B; /* Violeta profundo — texto y títulos */
+  --color-brand-aqua: #FFD166; /* Mango — botón principal */
+  --color-brand-orange: #FF8C42; /* Naranja — llamados a la acción */
+  --color-brand-coral: #EF476F; /* Rosa coral — ofertas y alertas */
+  --color-brand-purple: #7B61FF; /* Violeta — decorativo, huellas */
+  --color-brand-yellow: #FFE29A; /* Amarillo claro — badges "Nuevo" */
 
   /* ----- Tokens semánticos (remapeados a la marca) ----- */
-  --color-brand-primary: #5AE0D5;
-  --color-brand-secondary: #0D2B3E;
-  --color-brand-secondary-tint: #E3FAF8;
+  --color-brand-primary: #FFD166;
+  --color-brand-secondary: #40306B;
+  --color-brand-secondary-tint: #F1ECFF;
   --color-background: #FFFFFF; /* blanco puro, como pide la marca */
-  --color-foreground: #0D2B3E;
-  --color-muted: #5E7A8C;
-  --color-muted-bg: #F2F8FA;
-  --color-border: #E4EDF2;
-  --color-success: #17A673;
-  --color-danger: #F26D6D;
-  --color-warning: #F58A3C;
-  --color-gift: #F26D6D;
-  --color-surface-dark: #0D2B3E;
+  --color-foreground: #40306B;
+  --color-muted: #7C6E9B;
+  --color-muted-bg: #FAF7FF;
+  --color-border: #EDE7F8;
+  --color-success: #2BB673;
+  --color-danger: #EF476F;
+  --color-warning: #FF8C42;
+  --color-gift: #EF476F;
+  --color-surface-dark: #40306B;
 
-  --color-brand-coral-tint: #FDE7E7;
+  --color-brand-coral-tint: #FFE4EB;
 
   --page-width: 1440px;
 
@@ -152,7 +152,7 @@
   scrollbar-width: none;
 }
 
-/* ----- Huellas decorativas (morado #9B59B6) flotando en el fondo blanco ----- */
+/* ----- Huellas decorativas (morado #7B61FF) flotando en el fondo blanco ----- */
 .paw-decor {
   position: fixed;
   inset: 0;

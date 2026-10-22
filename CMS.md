@@ -6,7 +6,7 @@ ajustes de la tienda **desde el navegador**, sin tocar código.
 El panel vive en:
 
 ```
-https://<tu-dominio>/admin
+https://maskotita.github.io/admin
 ```
 
 Es un panel *git-based*: cada vez que guardás, hace un commit al repositorio de GitHub
@@ -60,10 +60,10 @@ git push origin main
 ```
 
 El workflow `.github/workflows/deploy.yml` compila con Astro y publica en
-`https://manapets.github.io/`. Tarda ~1 minuto.
+`https://maskotita.github.io/`. Tarda ~1 minuto.
 
-> Hay **dos** workflows iguales (`deploy.yml` y `static.yml`) que compiten por
-> el mismo deploy. Borra uno de los dos.
+> Antes de publicar, el workflow corre los tests y el verificador de links
+> internos: si algo falla, el sitio **no** se publica y queda la versión anterior.
 
 ### Paso 2 — Crear el Personal Access Token
 
@@ -74,7 +74,7 @@ permisos ya pre-seleccionados. Hacé clic ahí y seguí los pasos 2-3.
 **Link directo** (permisos ya puestos, vence en 1 año):
 
 ```
-https://github.com/settings/personal-access-tokens/new?name=Manapets+Admin&description=Panel+de+administracion+de+la+tienda&expires_in=365&contents=write
+https://github.com/settings/personal-access-tokens/new?name=Maskotita+Admin&description=Panel+de+administracion+de+la+tienda&expires_in=365&contents=write
 ```
 
 **A mano**, si preferís no usar el link:
@@ -84,17 +84,17 @@ GitHub → **Settings** → **Developer settings** → **Personal access tokens*
 
 | Campo | Valor |
 |---|---|
-| Resource owner | `manapets` (tu cuenta) |
-| Token name | `ManáPets Admin` |
+| Resource owner | `maskotita` (tu cuenta) |
+| Token name | `Maskotita Admin` |
 | Expiration | 1 año |
-| Repository access | Only select repositories → `manapets/manapets.github.io` |
+| Repository access | Only select repositories → `maskotita/maskotita.github.io` |
 | Repository permissions → **Contents** | **Read and write** |
 | Repository permissions → **Pull requests** | Read and write (sólo si vas a usar Editorial Workflow) |
 
 Copiá el token. **Aparece una sola vez**: guardalo en el gestor de contraseñas.
 
 > **Importante:** el token es de **tu usuario de GitHub** (el que es dueño o
-> colaborador con escritura del repo `manapets/manapets.github.io`). Si no tenés
+> colaborador con escritura del repo `maskotita/maskotita.github.io`). Si no tenés
 > rol Write ahí, el token no va a poder guardar nada.
 
 **Verificar el token antes de pegarlo** (opcional pero recomendado):
@@ -111,7 +111,7 @@ El script consulta la API de GitHub y te dice si el token sirve y, si no,
 
 ### Paso 3 — Entrar al panel
 
-1. Abrí `https://manapets.github.io/admin`
+1. Abrí `https://maskotita.github.io/admin`
 2. Presioná **Sign In Using Access Token**
 3. Pegá el token y confirmá
 
@@ -202,11 +202,10 @@ Los cambios tardan **~1 minuto** en verse (GitHub Actions reconstruye el sitio).
   sitio no se rompe: GitHub Pages conserva la última versión publicada.
 - **Campos vacíos:** el panel guarda los vacíos como `""`, `null` o `[]`; el sitio los
   interpreta como «sin valor» antes de validar (`pruneEmpty` en `src/content.config.ts`).
+  Además, `output.omit_empty_optional_fields: true` evita que se escriban en el JSON
+  los campos opcionales que quedaron vacíos (lo que espera el schema Zod del sitio).
 - **Rama:** `main`. Si preferís revisar los cambios antes de publicar, descomentá
   `publish_mode: editorial_workflow` en `public/admin/config.yml`.
-- **Campos vacíos:** `output.omit_empty_optional_fields: true` evita que se
-  escriban en el JSON los campos opcionales que quedaron vacíos (lo que espera el
-  schema Zod del sitio).
 - **Ruta del config:** `public/admin/index.html` declara
   `<link href="/admin/config.yml" rel="cms-config-url">`. Es a propósito: así el panel
   encuentra el config aunque entres a `/admin` **sin** la barra final (si usara la ruta
