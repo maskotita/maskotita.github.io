@@ -27,8 +27,11 @@ case "${1:-up}" in
     log "Inicializando git (si no existe)"
     if [ ! -d .git ]; then
       git init
-      git branch -M main
     fi
+
+    # La rama tiene que llamarse "main": es la que publica el workflow
+    # (.github/workflows/deploy.yml) y la rama por defecto del repo.
+    git branch -M main
 
     log "Conectando con GitHub"
     if ! git remote get-url origin >/dev/null 2>&1; then
