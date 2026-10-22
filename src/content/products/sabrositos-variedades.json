@@ -1,0 +1,24 @@
+{
+  "name": "Sabrositos Variedades",
+  "description": "Alimento seco Sabrositos Variedades para perros. Presentaciones de 15kg.",
+  "longDescription": "Sabrositos Variedades es un alimento seco de la línea Maskotita, pensado para perros.\n\nPresentaciones disponibles: 15kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 23000,
+  "category": "Alimentos Secos",
+  "brand": "Sabrositos",
+  "species": "perro",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "15kg",
+      "price": 23000,
+      "stock": 10,
+      "image": "/images/products/sabrositos-variedades-15kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/sabrositos-variedades-15kg.webp"
+  ],
+  "featured": false,
+  "inStock": true,
+  "tags": []
+}

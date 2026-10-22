@@ -1,0 +1,33 @@
+{
+  "name": "Rey Can Carne",
+  "description": "Alimento seco Rey Can Carne para perros. Presentaciones de 15kg, 22kg.",
+  "longDescription": "Rey Can Carne es un alimento seco de la línea Maskotita, pensado para perros.\n\nPresentaciones disponibles: 15kg, 22kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 34000,
+  "category": "Alimentos Secos",
+  "brand": "Rey Can",
+  "species": "perro",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "15kg",
+      "price": 34000,
+      "stock": 10,
+      "image": "/images/products/rey-can-carne-15kg.webp"
+    },
+    {
+      "label": "22kg",
+      "price": 47000,
+      "stock": 10,
+      "image": "/images/products/rey-can-carne-22kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/rey-can-carne-15kg.webp",
+    "/images/products/rey-can-carne-22kg.webp"
+  ],
+  "featured": true,
+  "inStock": true,
+  "tags": [
+    "top-ventas"
+  ]
+}

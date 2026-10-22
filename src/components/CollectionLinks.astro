@@ -1,11 +1,15 @@
 ---
-import { COLLECTIONS } from '../lib/nav';
+import { getCollection } from 'astro:content';
+import { collectionsWithProducts } from '../lib/products';
+
+const products = await getCollection('products');
+const collections = collectionsWithProducts(products);
 ---
 
 <section class="container-page py-10">
-  <div class="grid gap-4 sm:grid-cols-3">
+  <div class:list={['grid gap-4', collections.length === 2 ? 'sm:grid-cols-2' : 'sm:grid-cols-3']}>
     {
-      COLLECTIONS.map((collection) => (
+      collections.map((collection) => (
         <a href={collection.href} class="group relative flex h-44 items-end overflow-hidden rounded-[var(--radius-xl)]">
           <img src={collection.image} alt="" class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" width="1000" height="800" loading="lazy" />
           <div class="absolute inset-0 bg-gradient-to-t from-foreground/80 to-transparent"></div>

@@ -270,6 +270,19 @@ const multi = images.length > 1;
       applyTransform();
     }
 
+    /**
+     * Cambia la foto principal desde fuera (por ejemplo, al elegir otra
+     * presentación del producto). La foto puede no estar entre las miniaturas.
+     */
+    root.addEventListener('gallery:set-image', (e) => {
+      const src = (e as CustomEvent<string | undefined>).detail;
+      if (!src) return;
+      mainImg!.src = src;
+      lbImg!.src = src;
+      resetZoom();
+      thumbs.forEach((t) => t.classList.remove('border-neutral-900'));
+    });
+
     function openLightbox() {
       lightbox!.classList.add('is-open');
       lightbox!.setAttribute('aria-hidden', 'false');

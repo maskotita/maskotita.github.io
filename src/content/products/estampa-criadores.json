@@ -1,0 +1,38 @@
+{
+  "name": "Estampa Criadores",
+  "description": "Alimento seco Estampa Criadores para perros. Presentaciones de 8kg, 15kg, 20kg.",
+  "longDescription": "Estampa Criadores es un alimento seco de la línea Maskotita, pensado para perros.\n\nPresentaciones disponibles: 8kg, 15kg, 20kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 20000,
+  "category": "Alimentos Secos",
+  "brand": "Estampa",
+  "species": "perro",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "8kg",
+      "price": 20000,
+      "stock": 10,
+      "image": "/images/products/estampa-criadores-8kg.webp"
+    },
+    {
+      "label": "15kg",
+      "price": 36000,
+      "stock": 10,
+      "image": "/images/products/estampa-criadores-15kg.webp"
+    },
+    {
+      "label": "20kg",
+      "price": 46000,
+      "stock": 10,
+      "image": "/images/products/estampa-criadores-20kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/estampa-criadores-8kg.webp",
+    "/images/products/estampa-criadores-15kg.webp",
+    "/images/products/estampa-criadores-20kg.webp"
+  ],
+  "featured": false,
+  "inStock": true,
+  "tags": []
+}

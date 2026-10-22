@@ -61,12 +61,15 @@ function svg({ width, height, brand, label, subtitle, base, accent }) {
 }
 
 // --- Imágenes de producto (una por vista) ---
+// Sólo se generan para los productos que NO tienen fotos reales cargadas.
 await mkdir(join(IMAGES, 'products'), { recursive: true });
 const files = (await readdir(PRODUCTS_DIR)).filter((f) => f.endsWith('.json'));
 let count = 0;
 for (const file of files) {
   const slug = file.replace(/\.json$/, '');
   const data = JSON.parse(await readFile(join(PRODUCTS_DIR, file), 'utf8'));
+  const tieneFotos = Array.isArray(data.images) && data.images.length > 0;
+  if (tieneFotos) continue;
   const { base, accent } = nextPalette();
   for (let i = 0; i < VIEWS.length; i++) {
     const out = svg({
@@ -85,14 +88,14 @@ for (const file of files) {
 
 // --- Imágenes del sitio (hero, promos, categorías) ---
 const site = [
-  { path: 'hero/hero-1.svg', width: 1600, height: 900, label: 'Alimento seco y húmedo', brand: 'Maskotita', subtitle: 'Hasta 25% OFF en marcas seleccionadas', base: '#6134AA', accent: '#5DE2E7' },
-  { path: 'hero/hero-2.svg', width: 1600, height: 900, label: 'Kgs de regalo', brand: 'Maskotita', subtitle: 'En alimentos seleccionados de 7,5kg y 15kg', base: '#562F9A', accent: '#A980F8' },
+  { path: 'hero/hero-1.svg', width: 1600, height: 900, label: 'Alimento seco', brand: 'Maskotita', subtitle: 'Todas las marcas y presentaciones', base: '#6134AA', accent: '#5DE2E7' },
+  { path: 'hero/hero-2.svg', width: 1600, height: 900, label: 'Envío en el día', brand: 'Gran Mendoza', subtitle: 'Coordinamos la entrega', base: '#562F9A', accent: '#A980F8' },
   { path: 'promos/destacado-1.svg', width: 800, height: 800, label: 'Envío gratis', brand: 'Gran Mendoza', subtitle: 'En compras sobre $30.000', base: '#6134AA', accent: '#F3EEFC' },
   { path: 'promos/destacado-2.svg', width: 800, height: 800, label: '3 cuotas sin interés', brand: 'Mercado Pago', subtitle: 'Sobre $150.000', base: '#7A4FC7', accent: '#A980F8' },
-  { path: 'promos/kg-regalo.svg', width: 900, height: 700, label: 'Alimentos con kg de regalo', brand: 'Promo', subtitle: 'Aprovechá los combos', base: '#6134AA', accent: '#A980F8' },
+  { path: 'promos/kg-regalo.svg', width: 900, height: 700, label: 'Todas las marcas', brand: 'Maskotita', subtitle: 'Agility, Balanced, Estampa y más', base: '#6134AA', accent: '#A980F8' },
   { path: 'promos/reintegros.svg', width: 900, height: 700, label: 'Reintegros en cada compra', brand: 'Beneficio', subtitle: '5% para tu próxima compra', base: '#562F9A', accent: '#5DE2E7' },
   { path: 'categories/perros.svg', width: 1000, height: 800, label: 'Perros', brand: 'Cachorro · Adulto · Senior', subtitle: '', base: '#6134AA', accent: '#A980F8' },
-  { path: 'categories/gatos.svg', width: 1000, height: 800, label: 'Gatos', brand: 'Cachorro · Adulto · Castrado', subtitle: '', base: '#7A4FC7', accent: '#5DE2E7' },
+  { path: 'categories/gatos.svg', width: 1000, height: 800, label: 'Gatos', brand: 'Gatito · Adulto · Castrado', subtitle: '', base: '#7A4FC7', accent: '#5DE2E7' },
 ];
 
 for (const s of site) {

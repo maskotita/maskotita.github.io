@@ -1,0 +1,44 @@
+{
+  "name": "Sabrositos Gato Mix",
+  "description": "Alimento seco Sabrositos Gato Mix para gatos. Presentaciones de 1kg, 3kg, 10kg, 20kg.",
+  "longDescription": "Sabrositos Gato Mix es un alimento seco de la línea Maskotita, pensado para gatos.\n\nPresentaciones disponibles: 1kg, 3kg, 10kg, 20kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 4000,
+  "category": "Alimentos Secos",
+  "brand": "Sabrositos",
+  "species": "gato",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "1kg",
+      "price": 4000,
+      "stock": 10,
+      "image": "/images/products/sabrositos-gato-mix-1kg.webp"
+    },
+    {
+      "label": "3kg",
+      "price": 8000,
+      "stock": 10,
+      "image": "/images/products/sabrositos-gato-mix-3kg.webp"
+    },
+    {
+      "label": "10kg",
+      "price": 24000,
+      "stock": 10,
+      "image": "/images/products/sabrositos-gato-mix-10kg.webp"
+    },
+    {
+      "label": "20kg",
+      "price": 46000,
+      "stock": 10,
+      "image": "/images/products/sabrositos-gato-mix-20kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/sabrositos-gato-mix-1kg.webp",
+    "/images/products/sabrositos-gato-mix-3kg.webp",
+    "/images/products/sabrositos-gato-mix-10kg.webp"
+  ],
+  "featured": false,
+  "inStock": true,
+  "tags": []
+}

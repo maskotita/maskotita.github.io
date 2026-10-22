@@ -1,0 +1,33 @@
+{
+  "name": "Agility Salmon",
+  "description": "Alimento seco Agility Salmon para gatos. Presentaciones de 1.5kg, 10kg.",
+  "longDescription": "Agility Salmon es un alimento seco de la línea Maskotita, pensado para gatos.\n\nPresentaciones disponibles: 1.5kg, 10kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 14000,
+  "category": "Alimentos Secos",
+  "brand": "Agility",
+  "species": "gato",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "1.5kg",
+      "price": 14000,
+      "stock": 10,
+      "image": "/images/products/agility-salmon-1-5kg.webp"
+    },
+    {
+      "label": "10kg",
+      "price": 67000,
+      "stock": 10,
+      "image": "/images/products/agility-salmon-10kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/agility-salmon-1-5kg.webp",
+    "/images/products/agility-salmon-10kg.webp"
+  ],
+  "featured": false,
+  "inStock": true,
+  "tags": [
+    "novedad"
+  ]
+}

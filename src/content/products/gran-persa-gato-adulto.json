@@ -1,0 +1,26 @@
+{
+  "name": "Gran Persa Gato Adulto",
+  "description": "Alimento seco Gran Persa Gato Adulto para gatos. Presentaciones de 10kg.",
+  "longDescription": "Gran Persa Gato Adulto es un alimento seco de la línea Maskotita, pensado para gatos.\n\nPresentaciones disponibles: 10kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 36000,
+  "category": "Alimentos Secos",
+  "brand": "Gran Persa",
+  "species": "gato",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "10kg",
+      "price": 36000,
+      "stock": 10,
+      "image": "/images/products/gran-persa-gato-adulto-10kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/gran-persa-gato-adulto-10kg.webp"
+  ],
+  "featured": false,
+  "inStock": true,
+  "tags": [
+    "novedad"
+  ]
+}

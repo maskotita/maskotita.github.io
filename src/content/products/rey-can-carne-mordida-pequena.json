@@ -1,0 +1,31 @@
+{
+  "name": "Rey Can Carne Mordida Pequeña",
+  "description": "Alimento seco Rey Can Carne Mordida Pequeña para perros. Presentaciones de 8kg, 15kg.",
+  "longDescription": "Rey Can Carne Mordida Pequeña es un alimento seco de la línea Maskotita, pensado para perros.\n\nPresentaciones disponibles: 8kg, 15kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 21000,
+  "category": "Alimentos Secos",
+  "brand": "Rey Can",
+  "species": "perro",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "8kg",
+      "price": 21000,
+      "stock": 10,
+      "image": "/images/products/rey-can-carne-mordida-pequena-8kg.webp"
+    },
+    {
+      "label": "15kg",
+      "price": 36000,
+      "stock": 10,
+      "image": "/images/products/rey-can-carne-mordida-pequena-15kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/rey-can-carne-mordida-pequena-8kg.webp",
+    "/images/products/rey-can-carne-mordida-pequena-15kg.webp"
+  ],
+  "featured": false,
+  "inStock": true,
+  "tags": []
+}

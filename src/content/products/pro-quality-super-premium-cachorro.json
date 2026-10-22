@@ -1,0 +1,24 @@
+{
+  "name": "Pro Quality Super Premium Cachorro",
+  "description": "Alimento seco Pro Quality Super Premium Cachorro para perros. Presentaciones de 15kg.",
+  "longDescription": "Pro Quality Super Premium Cachorro es un alimento seco de la línea Maskotita, pensado para perros.\n\nPresentaciones disponibles: 15kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 54000,
+  "category": "Alimentos Secos",
+  "brand": "Pro Quality",
+  "species": "perro",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "15kg",
+      "price": 54000,
+      "stock": 10,
+      "image": "/images/products/pro-quality-super-premium-cachorro-15kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/pro-quality-super-premium-cachorro-15kg.webp"
+  ],
+  "featured": false,
+  "inStock": true,
+  "tags": []
+}

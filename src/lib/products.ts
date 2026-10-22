@@ -6,6 +6,7 @@ import {
   type CatalogProduct,
   type CollectionSlug,
 } from './catalog';
+import { COLLECTIONS, type CollectionDef, type NavItem } from './nav';
 
 export type ProductEntry = CollectionEntry<'products'>;
 
@@ -41,4 +42,22 @@ export function collectionEntries(
   slug: CollectionSlug,
 ): ProductEntry[] {
   return entries.filter((entry) => inCollection(toCatalogProduct(entry), slug));
+}
+
+/**
+ * Colecciones que tienen al menos un producto.
+ * Sirve para no linkear a colecciones vacías (p. ej. "Liquidación" hasta que
+ * haya productos con precio anterior tachado).
+ */
+export function collectionsWithProducts(entries: ProductEntry[]): CollectionDef[] {
+  return COLLECTIONS.filter((c) => collectionEntries(entries, c.slug).length > 0);
+}
+
+/**
+ * Navegación sin enlaces a colecciones vacías.
+ * Sólo se filtran los items que apuntan a /collections/…
+ */
+export function navWithCollections(entries: ProductEntry[], nav: NavItem[]): NavItem[] {
+  const hrefs = new Set(collectionsWithProducts(entries).map((c) => c.href));
+  return nav.filter((item) => !item.href.startsWith('/collections/') || hrefs.has(item.href));
 }

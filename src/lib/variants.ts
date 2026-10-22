@@ -6,6 +6,8 @@ export interface ProductVariant {
   compareAtPrice?: number;
   stock: number;
   bonusKg?: number;
+  /** Foto específica de esta presentación (opcional). */
+  image?: string;
 }
 
 export interface VariantProduct {
@@ -29,6 +31,8 @@ export interface ResolvedVariant {
   stockLabel: string;
   inStock: boolean;
   bonusKg: number;
+  /** Foto específica de la variante (opcional). */
+  image: string | null;
 }
 
 const DEFAULT_STOCK = 25;
@@ -73,6 +77,7 @@ export function resolveVariant(product: VariantProduct, index?: number): Resolve
       stockLabel: stockLabel(stock),
       inStock: stock > 0,
       bonusKg: product.bonusKg ?? 0,
+      image: null,
     };
   }
 
@@ -91,5 +96,6 @@ export function resolveVariant(product: VariantProduct, index?: number): Resolve
     stockLabel: stockLabel(variant.stock),
     inStock: variant.stock > 0,
     bonusKg: variant.bonusKg ?? product.bonusKg ?? 0,
+    image: variant.image ?? null,
   };
 }

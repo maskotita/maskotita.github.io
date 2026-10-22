@@ -17,7 +17,7 @@ import { STORE } from '../config';
 import { discountPercent } from '../lib/pricing';
 
 const products = await getCollection('products');
-const spotlightBrand = 'Royal Canin';
+const spotlightBrand = 'Agility';
 const spotlight = products.filter((p) => p.data.brand === spotlightBrand).slice(0, 5);
 const bestsellers = products.filter((p) => p.data.tags.includes('top-ventas'));
 const weekly = products
@@ -34,11 +34,11 @@ const weekly = products
   <Benefits />
   <CategoryTiles />
   <PromoStrip />
-  <BrandSpotlight brand={spotlightBrand} slug="royal-canin" products={spotlight} />
+  <BrandSpotlight brand={spotlightBrand} slug="agility" products={spotlight} />
   <BrandStrip />
   <FoodTypeTiles />
   <CollectionLinks />
   <BestsellersTabs products={bestsellers} />
-  <WeeklyOffers products={weekly} />
+  {weekly.length > 0 && <WeeklyOffers products={weekly} />}
   <Faq />
 </BaseLayout>

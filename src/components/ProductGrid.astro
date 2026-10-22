@@ -22,6 +22,16 @@ const usedCategories = CATEGORIES.filter((c) =>
 const usedBrands = BRANDS.filter((b) =>
   products.some((p) => slugifyCategory(p.data.brand) === b.slug),
 );
+
+/* Los filtros de tipo y de promoción sólo aparecen si hay productos que los usen. */
+const FOOD_TYPES: { value: string; label: string }[] = [
+  { value: 'seco', label: 'Seco' },
+  { value: 'humido', label: 'Húmedo' },
+];
+const usedFoodTypes = FOOD_TYPES.filter((f) =>
+  products.some((p) => (p.data.foodType ?? '') === f.value),
+);
+const hasKgPromo = products.some((p) => (p.data.bonusKg ?? 0) > 0);
 ---
 
 <section class="container-page py-8">
@@ -40,9 +50,8 @@ const usedBrands = BRANDS.filter((b) =>
       </div>
       <div class="flex flex-wrap gap-2" data-filter-food>
         <button type="button" data-value="" class="chip chip-active">Cualquier tipo</button>
-        <button type="button" data-value="seco" class="chip">Seco</button>
-        <button type="button" data-value="humido" class="chip">Húmedo</button>
-        <button type="button" data-value="kg" class="chip">Kg de regalo</button>
+        {usedFoodTypes.map((f) => <button type="button" data-value={f.value} class="chip">{f.label}</button>)}
+        {hasKgPromo && <button type="button" data-value="kg" class="chip">Kg de regalo</button>}
       </div>
     </div>
 

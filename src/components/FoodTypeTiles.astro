@@ -6,18 +6,12 @@ const types = [
     href: '/productos/?tipo=seco',
     icon: 'dry',
   },
-  {
-    title: 'Húmedo',
-    text: 'Latas, patés y pouch',
-    href: '/productos/?tipo=humido',
-    icon: 'wet',
-  },
 ];
 ---
 
 <section class="container-page py-10">
   <h2 class="mb-5 text-2xl font-extrabold tracking-tight">Buscar por tipo de alimento</h2>
-  <div class="grid gap-4 sm:grid-cols-2">
+  <div class:list={['grid gap-4', types.length === 1 ? 'sm:grid-cols-1' : 'sm:grid-cols-2']}>
     {
       types.map((type) => (
         <a href={type.href} class="group flex items-center justify-between gap-4 rounded-[var(--radius-xl)] border border-border bg-white p-6 transition-shadow hover:shadow-lg">

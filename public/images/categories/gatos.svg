@@ -12,7 +12,7 @@
   <rect width="1000" height="800" fill="url(#g)"/>
   <rect width="1000" height="800" fill="url(#grid)"/>
   <circle cx="443" cy="215" r="25.2" fill="rgba(255,255,255,0.28)"/><circle cx="479" cy="191" r="27.6" fill="rgba(255,255,255,0.28)"/><circle cx="521" cy="191" r="27.6" fill="rgba(255,255,255,0.28)"/><circle cx="557" cy="215" r="25.2" fill="rgba(255,255,255,0.28)"/><ellipse cx="500" cy="272" rx="57" ry="48" fill="rgba(255,255,255,0.28)"/>
-  <text x="500" y="440" text-anchor="middle" font-family="Fredoka, Nunito, system-ui, sans-serif" font-size="44" font-weight="700" letter-spacing="4" fill="rgba(255,255,255,0.85)">CACHORRO · ADULTO · CASTRADO</text>
+  <text x="500" y="440" text-anchor="middle" font-family="Fredoka, Nunito, system-ui, sans-serif" font-size="44" font-weight="700" letter-spacing="4" fill="rgba(255,255,255,0.85)">GATITO · ADULTO · CASTRADO</text>
   <text x="500" y="512" text-anchor="middle" font-family="Fredoka, Nunito, system-ui, sans-serif" font-size="68" font-weight="800" fill="rgba(255,255,255,0.97)">Gatos</text>
   
 </svg>

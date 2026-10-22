@@ -1,0 +1,40 @@
+{
+  "name": "Sabrositos Cachorro",
+  "description": "Alimento seco Sabrositos Cachorro para perros. Presentaciones de 3kg, 8kg, 18kg.",
+  "longDescription": "Sabrositos Cachorro es un alimento seco de la línea Maskotita, pensado para perros.\n\nPresentaciones disponibles: 3kg, 8kg, 18kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 7000,
+  "category": "Alimentos Secos",
+  "brand": "Sabrositos",
+  "species": "perro",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "3kg",
+      "price": 7000,
+      "stock": 10,
+      "image": "/images/products/sabrositos-cachorro-3kg.webp"
+    },
+    {
+      "label": "8kg",
+      "price": 17000,
+      "stock": 10,
+      "image": "/images/products/sabrositos-cachorro-8kg.webp"
+    },
+    {
+      "label": "18kg",
+      "price": 36000,
+      "stock": 10,
+      "image": "/images/products/sabrositos-cachorro-18kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/sabrositos-cachorro-3kg.webp",
+    "/images/products/sabrositos-cachorro-8kg.webp",
+    "/images/products/sabrositos-cachorro-18kg.webp"
+  ],
+  "featured": true,
+  "inStock": true,
+  "tags": [
+    "top-ventas"
+  ]
+}

@@ -54,10 +54,6 @@ export const NAV: NavItem[] = [
     href: '/perros',
     children: [
       { label: 'Alimentos Secos', href: '/productos/?especie=perro&cat=alimentos-secos' },
-      { label: 'Alimentos Húmedos', href: '/productos/?especie=perro&cat=alimentos-humedos' },
-      { label: 'Camas', href: '/productos/?especie=perro&cat=camas' },
-      { label: 'Higiene', href: '/productos/?especie=perro&cat=higiene' },
-      { label: 'Snacks', href: '/productos/?especie=perro&cat=snacks' },
     ],
   },
   {
@@ -65,15 +61,9 @@ export const NAV: NavItem[] = [
     href: '/gatos',
     children: [
       { label: 'Alimentos Secos', href: '/productos/?especie=gato&cat=alimentos-secos' },
-      { label: 'Alimentos Húmedos', href: '/productos/?especie=gato&cat=alimentos-humedos' },
-      { label: 'Camas', href: '/productos/?especie=gato&cat=camas' },
-      { label: 'Piedras Sanitarias', href: '/productos/?especie=gato&cat=piedras-sanitarias' },
-      { label: 'Rascadores', href: '/productos/?especie=gato&cat=rascadores' },
-      { label: 'Snacks', href: '/productos/?especie=gato&cat=snacks' },
     ],
   },
   { label: 'Marcas', href: '/marcas' },
-  { label: 'KGs de regalo', href: '/productos/?promo=kg' },
   { label: 'Liquidación', href: '/collections/liquidacion' },
 ];
 
@@ -83,15 +73,16 @@ export interface Brand {
 }
 
 export const BRANDS: Brand[] = [
-  { name: 'Royal Canin', slug: 'royal-canin' },
   { name: 'Agility', slug: 'agility' },
-  { name: 'Sieger', slug: 'sieger' },
-  { name: 'Old Prince', slug: 'old-prince' },
-  { name: 'Ken L', slug: 'ken-l' },
-  { name: 'Pro Plan', slug: 'pro-plan' },
-  { name: 'Excellent', slug: 'excellent' },
-  { name: 'Eukanuba', slug: 'eukanuba' },
-  { name: 'Patitas', slug: 'patitas' },
+  { name: 'Balanced', slug: 'balanced' },
+  { name: 'Estampa', slug: 'estampa' },
+  { name: 'Gran Pastor', slug: 'gran-pastor' },
+  { name: 'Gran Persa', slug: 'gran-persa' },
+  { name: 'Ken-L', slug: 'ken-l' },
+  { name: 'Pro Quality', slug: 'pro-quality' },
+  { name: 'Rey Can', slug: 'rey-can' },
+  { name: 'Rey Cat', slug: 'rey-cat' },
+  { name: 'Sabrositos', slug: 'sabrositos' },
 ];
 
 export interface Category {

@@ -1,0 +1,33 @@
+{
+  "name": "Estampa Plus Gato",
+  "description": "Alimento seco Estampa Plus Gato para gatos. Presentaciones de 8kg, 15kg.",
+  "longDescription": "Estampa Plus Gato es un alimento seco de la línea Maskotita, pensado para gatos.\n\nPresentaciones disponibles: 8kg, 15kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 28000,
+  "category": "Alimentos Secos",
+  "brand": "Estampa",
+  "species": "gato",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "8kg",
+      "price": 28000,
+      "stock": 10,
+      "image": "/images/products/estampa-plus-gato-8kg.webp"
+    },
+    {
+      "label": "15kg",
+      "price": 50000,
+      "stock": 10,
+      "image": "/images/products/estampa-plus-gato-15kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/estampa-plus-gato-8kg.webp",
+    "/images/products/estampa-plus-gato-15kg.webp"
+  ],
+  "featured": false,
+  "inStock": true,
+  "tags": [
+    "novedad"
+  ]
+}

@@ -127,6 +127,7 @@ const categoryHref = `/productos/?cat=${encodeURIComponent(data.category.toLower
                     data-in-stock={String(v.inStock)}
                     data-cart-id={v.cartId}
                     data-label={v.label ?? ''}
+                    data-image={v.image ?? ''}
                     aria-pressed={v.index === active.index}
                   >
                     {v.label}
@@ -154,7 +155,7 @@ const categoryHref = `/productos/?cat=${encodeURIComponent(data.category.toLower
             data-add-id={active.cartId}
             data-add-name={data.name}
             data-add-price={active.price}
-            data-add-image={data.images[0]}
+            data-add-image={active.image ?? data.images[0]}
             data-add-variant={active.label ?? ''}
             data-add-qty-target="#qty-detail"
             disabled={!active.inStock}
@@ -259,6 +260,7 @@ const categoryHref = `/productos/?cat=${encodeURIComponent(data.category.toLower
     const giftBadge = detail.querySelector<HTMLElement>('[data-gift-badge]');
     const stockEl = detail.querySelector<HTMLElement>('[data-detail-stock]');
     const addBtn = detail.querySelector<HTMLButtonElement>('[data-add-to-cart]');
+    const gallery = detail.querySelector<HTMLElement>('[data-gallery]');
 
     root.addEventListener('click', (e) => {
       const btn = (e.target as HTMLElement).closest<HTMLElement>('[data-variant]');
@@ -277,6 +279,11 @@ const categoryHref = `/productos/?cat=${encodeURIComponent(data.category.toLower
       const inStock = btn.dataset.inStock === 'true';
       const label = btn.dataset.label ?? '';
 
+      const variantImage = btn.dataset.image || '';
+
+      if (variantImage) {
+        gallery?.dispatchEvent(new CustomEvent('gallery:set-image', { detail: variantImage }));
+      }
       if (priceEl) priceEl.textContent = formatPrice(price);
       if (compareEl) {
         compareEl.textContent = compare ? formatPrice(compare) : '';
@@ -298,6 +305,7 @@ const categoryHref = `/productos/?cat=${encodeURIComponent(data.category.toLower
         addBtn.dataset.addId = btn.dataset.cartId ?? '';
         addBtn.dataset.addPrice = String(price);
         addBtn.dataset.addVariant = label;
+        if (variantImage) addBtn.dataset.addImage = variantImage;
         addBtn.disabled = !inStock;
         addBtn.textContent = inStock ? 'Agregar al carrito' : 'Sin stock';
       }

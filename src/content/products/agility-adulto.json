@@ -1,0 +1,46 @@
+{
+  "name": "Agility Adulto",
+  "description": "Alimento seco Agility Adulto para perros. Presentaciones de 1.5kg, 3kg, 10kg, 20kg.",
+  "longDescription": "Agility Adulto es un alimento seco de la línea Maskotita, pensado para perros.\n\nPresentaciones disponibles: 1.5kg, 3kg, 10kg, 20kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 12000,
+  "category": "Alimentos Secos",
+  "brand": "Agility",
+  "species": "perro",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "1.5kg",
+      "price": 12000,
+      "stock": 10,
+      "image": "/images/products/agility-adulto-1-5kg.webp"
+    },
+    {
+      "label": "3kg",
+      "price": 13000,
+      "stock": 10,
+      "image": "/images/products/agility-adulto-3kg.webp"
+    },
+    {
+      "label": "10kg",
+      "price": 61000,
+      "stock": 10,
+      "image": "/images/products/agility-adulto-10kg.webp"
+    },
+    {
+      "label": "20kg",
+      "price": 63000,
+      "stock": 10,
+      "image": "/images/products/agility-adulto-20kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/agility-adulto-1-5kg.webp",
+    "/images/products/agility-adulto-3kg.webp",
+    "/images/products/agility-adulto-10kg.webp"
+  ],
+  "featured": true,
+  "inStock": true,
+  "tags": [
+    "top-ventas"
+  ]
+}

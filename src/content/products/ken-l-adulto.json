@@ -1,0 +1,31 @@
+{
+  "name": "Ken-L Adulto",
+  "description": "Alimento seco Ken-L Adulto para perros. Presentaciones de 3kg, 15kg.",
+  "longDescription": "Ken-L Adulto es un alimento seco de la línea Maskotita, pensado para perros.\n\nPresentaciones disponibles: 3kg, 15kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 13000,
+  "category": "Alimentos Secos",
+  "brand": "Ken-L",
+  "species": "perro",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "3kg",
+      "price": 13000,
+      "stock": 10,
+      "image": "/images/products/ken-l-adulto-3kg.webp"
+    },
+    {
+      "label": "15kg",
+      "price": 53000,
+      "stock": 10,
+      "image": "/images/products/ken-l-adulto-15kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/ken-l-adulto-3kg.webp",
+    "/images/products/ken-l-adulto-15kg.webp"
+  ],
+  "featured": false,
+  "inStock": true,
+  "tags": []
+}

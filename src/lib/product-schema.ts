@@ -12,6 +12,8 @@ export const variantSchema = z.object({
   stock: z.number().int().nonnegative(),
   /** Kilos de regalo de esta variante (opcional). */
   bonusKg: z.number().nonnegative().optional(),
+  /** Foto específica de esta variante (opcional). */
+  image: z.string().optional(),
 });
 
 /**

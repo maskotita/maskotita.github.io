@@ -1,0 +1,33 @@
+{
+  "name": "Pro Quality Cachorro",
+  "description": "Alimento seco Pro Quality Cachorro para perros. Presentaciones de 5kg, 21kg.",
+  "longDescription": "Pro Quality Cachorro es un alimento seco de la línea Maskotita, pensado para perros.\n\nPresentaciones disponibles: 5kg, 21kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 13000,
+  "category": "Alimentos Secos",
+  "brand": "Pro Quality",
+  "species": "perro",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "5kg",
+      "price": 13000,
+      "stock": 10,
+      "image": "/images/products/pro-quality-cachorro-5kg.webp"
+    },
+    {
+      "label": "21kg",
+      "price": 43000,
+      "stock": 10,
+      "image": "/images/products/pro-quality-cachorro-21kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/pro-quality-cachorro-5kg.webp",
+    "/images/products/pro-quality-cachorro-21kg.webp"
+  ],
+  "featured": true,
+  "inStock": true,
+  "tags": [
+    "top-ventas"
+  ]
+}

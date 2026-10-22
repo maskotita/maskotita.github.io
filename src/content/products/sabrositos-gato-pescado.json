@@ -1,0 +1,40 @@
+{
+  "name": "Sabrositos Gato Pescado",
+  "description": "Alimento seco Sabrositos Gato Pescado para gatos. Presentaciones de 3kg, 10kg, 20kg.",
+  "longDescription": "Sabrositos Gato Pescado es un alimento seco de la línea Maskotita, pensado para gatos.\n\nPresentaciones disponibles: 3kg, 10kg, 20kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 9000,
+  "category": "Alimentos Secos",
+  "brand": "Sabrositos",
+  "species": "gato",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "3kg",
+      "price": 9000,
+      "stock": 10,
+      "image": "/images/products/sabrositos-gato-pescado-3kg.webp"
+    },
+    {
+      "label": "10kg",
+      "price": 26000,
+      "stock": 10,
+      "image": "/images/products/sabrositos-gato-pescado-10kg.webp"
+    },
+    {
+      "label": "20kg",
+      "price": 50000,
+      "stock": 10,
+      "image": "/images/products/sabrositos-gato-pescado-20kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/sabrositos-gato-pescado-3kg.webp",
+    "/images/products/sabrositos-gato-pescado-10kg.webp",
+    "/images/products/sabrositos-gato-pescado-20kg.webp"
+  ],
+  "featured": false,
+  "inStock": true,
+  "tags": [
+    "novedad"
+  ]
+}

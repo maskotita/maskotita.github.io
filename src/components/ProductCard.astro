@@ -29,10 +29,11 @@ function stockState(stock: number): 'out' | 'low' | 'ok' {
   class="card group flex flex-col overflow-hidden transition-shadow hover:shadow-md"
   data-card
   data-variant-count={resolved.length}
+  data-name={data.name}
 >
   <a href={href} class="relative block aspect-square overflow-hidden bg-muted-bg">
     <img
-      src={data.images[0]}
+      src={active.image ?? data.images[0]}
       alt={data.name}
       width="600"
       height="600"
@@ -94,6 +95,7 @@ function stockState(stock: number): 'out' | 'low' | 'ok' {
               data-in-stock={String(v.inStock)}
               data-cart-id={v.cartId}
               data-label={v.label ?? ''}
+              data-image={v.image ?? ''}
               aria-pressed={v.index === active.index}
             >{v.label}</button>
           ))}
@@ -112,7 +114,7 @@ function stockState(stock: number): 'out' | 'low' | 'ok' {
       data-add-id={active.cartId}
       data-add-name={data.name}
       data-add-price={active.price}
-      data-add-image={data.images[0]}
+      data-add-image={active.image ?? data.images[0]}
       data-add-variant={active.label ?? ''}
       disabled={!active.inStock}
       aria-label={`Agregar ${data.name} al carrito`}
@@ -224,13 +226,24 @@ function stockState(stock: number): 'out' | 'low' | 'ok' {
       stockEl.textContent = stockLabel;
       stockEl.dataset.state = stockState || stateFor(String(btn.dataset.stock));
     }
+    const variantImage = btn.dataset.image || '';
     if (addBtn) {
       addBtn.dataset.addId = btn.dataset.cartId ?? '';
       addBtn.dataset.addPrice = String(price);
       addBtn.dataset.addVariant = label;
+      if (variantImage) addBtn.dataset.addImage = variantImage;
       addBtn.disabled = !inStock;
       addBtn.textContent = inStock ? 'Comprar' : 'Sin stock';
     }
-    if (imgEl) imgEl.classList.remove('hidden');
+    if (imgEl) {
+      if (variantImage) {
+        const img = imgEl as HTMLImageElement;
+        img.src = variantImage;
+        img.alt = btn.dataset.label
+          ? `${btn.dataset.label} · ${card.dataset.name ?? ''}`.trim()
+          : img.alt;
+      }
+      imgEl.classList.remove('hidden');
+    }
   });
 </script>

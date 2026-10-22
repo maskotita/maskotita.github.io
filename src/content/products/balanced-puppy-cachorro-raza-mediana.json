@@ -1,0 +1,38 @@
+{
+  "name": "Balanced Puppy Cachorro Raza Mediana",
+  "description": "Alimento seco Balanced Puppy Cachorro Raza Mediana para perros. Presentaciones de 1kg, 3kg, 12kg.",
+  "longDescription": "Balanced Puppy Cachorro Raza Mediana es un alimento seco de la línea Maskotita, pensado para perros.\n\nPresentaciones disponibles: 1kg, 3kg, 12kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 7000,
+  "category": "Alimentos Secos",
+  "brand": "Balanced",
+  "species": "perro",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "1kg",
+      "price": 7000,
+      "stock": 10,
+      "image": "/images/products/balanced-puppy-cachorro-raza-mediana-1kg.webp"
+    },
+    {
+      "label": "3kg",
+      "price": 20000,
+      "stock": 10,
+      "image": "/images/products/balanced-puppy-cachorro-raza-mediana-3kg.webp"
+    },
+    {
+      "label": "12kg",
+      "price": 57000,
+      "stock": 10,
+      "image": "/images/products/balanced-puppy-cachorro-raza-mediana-12kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/balanced-puppy-cachorro-raza-mediana-1kg.webp",
+    "/images/products/balanced-puppy-cachorro-raza-mediana-3kg.webp",
+    "/images/products/balanced-puppy-cachorro-raza-mediana-12kg.webp"
+  ],
+  "featured": false,
+  "inStock": true,
+  "tags": []
+}

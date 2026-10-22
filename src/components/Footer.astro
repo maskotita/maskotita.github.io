@@ -1,9 +1,12 @@
 ---
+import { getCollection } from 'astro:content';
 import { STORE } from '../config';
 import { NAV } from '../lib/nav';
+import { navWithCollections } from '../lib/products';
 
+const products = await getCollection('products');
 const year = new Date().getFullYear();
-const menu = NAV;
+const menu = navWithCollections(products, NAV);
 const ayuda = [
   { label: 'Envíos y entregas', href: '/#faq-envio-gratis' },
   { label: 'Retiro en depósito', href: '/#faq-retiro' },

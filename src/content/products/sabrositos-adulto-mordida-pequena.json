@@ -1,0 +1,24 @@
+{
+  "name": "Sabrositos Adulto Mordida Pequeña",
+  "description": "Alimento seco Sabrositos Adulto Mordida Pequeña para perros. Presentaciones de 15kg.",
+  "longDescription": "Sabrositos Adulto Mordida Pequeña es un alimento seco de la línea Maskotita, pensado para perros.\n\nPresentaciones disponibles: 15kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 27000,
+  "category": "Alimentos Secos",
+  "brand": "Sabrositos",
+  "species": "perro",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "15kg",
+      "price": 27000,
+      "stock": 10,
+      "image": "/images/products/sabrositos-adulto-mordida-pequena-15kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/sabrositos-adulto-mordida-pequena-15kg.webp"
+  ],
+  "featured": false,
+  "inStock": true,
+  "tags": []
+}

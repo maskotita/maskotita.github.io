@@ -141,12 +141,12 @@ collections:
         name: category
         widget: string
         default: General
-        hint: "Ej: Alimentos Secos, Alimentos Húmedos, Camas, Higiene, Piedras Sanitarias, Rascadores, Snacks"
+        hint: "Ej: Alimentos Secos, Alimentos Húmedos, Camas, Higiene, Snacks"
 
       - label: Marca
         name: brand
         widget: string
-        hint: "Ej: Royal Canin, Agility, Pro Plan, Eukanuba…"
+        hint: "Ej: Agility, Balanced, Estampa, Ken-L, Pro Quality, Rey Can…"
 
       - label: Especie
         name: species
@@ -187,6 +187,7 @@ collections:
           - { label: Precio anterior, name: compareAtPrice, widget: number, value_type: int, min: 1, required: false }
           - { label: Stock (unidades), name: stock, widget: number, value_type: int, min: 0 }
           - { label: Kilos de regalo, name: bonusKg, widget: number, value_type: int, min: 0, required: false }
+          - { label: Foto de esta presentación, name: image, widget: image, required: false, hint: "Opcional. Si la cargás, la foto cambia al elegir la presentación." }
 
       - label: Imágenes (de 1 a 3)
         name: images

@@ -1,0 +1,26 @@
+{
+  "name": "Balanced Raza Gigante",
+  "description": "Alimento seco Balanced Raza Gigante para perros. Presentaciones de 20kg.",
+  "longDescription": "Balanced Raza Gigante es un alimento seco de la línea Maskotita, pensado para perros.\n\nPresentaciones disponibles: 20kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 83000,
+  "category": "Alimentos Secos",
+  "brand": "Balanced",
+  "species": "perro",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "20kg",
+      "price": 83000,
+      "stock": 10,
+      "image": "/images/products/balanced-raza-gigante-20kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/balanced-raza-gigante-20kg.webp"
+  ],
+  "featured": false,
+  "inStock": true,
+  "tags": [
+    "novedad"
+  ]
+}

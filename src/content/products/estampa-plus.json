@@ -1,0 +1,33 @@
+{
+  "name": "Estampa Plus",
+  "description": "Alimento seco Estampa Plus para perros y gatos. Presentaciones de 15kg, 20kg.",
+  "longDescription": "Estampa Plus es un alimento seco de la línea Maskotita, pensado para perros y gatos.\n\nPresentaciones disponibles: 15kg, 20kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 42000,
+  "category": "Alimentos Secos",
+  "brand": "Estampa",
+  "species": "ambos",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "15kg",
+      "price": 42000,
+      "stock": 10,
+      "image": "/images/products/estampa-plus-15kg.webp"
+    },
+    {
+      "label": "20kg",
+      "price": 54000,
+      "stock": 10,
+      "image": "/images/products/estampa-plus-20kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/estampa-plus-15kg.webp",
+    "/images/products/estampa-plus-20kg.webp"
+  ],
+  "featured": true,
+  "inStock": true,
+  "tags": [
+    "top-ventas"
+  ]
+}

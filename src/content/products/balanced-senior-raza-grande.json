@@ -1,0 +1,31 @@
+{
+  "name": "Balanced Senior Raza Grande",
+  "description": "Alimento seco Balanced Senior Raza Grande para perros. Presentaciones de 3kg, 15kg.",
+  "longDescription": "Balanced Senior Raza Grande es un alimento seco de la línea Maskotita, pensado para perros.\n\nPresentaciones disponibles: 3kg, 15kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 19000,
+  "category": "Alimentos Secos",
+  "brand": "Balanced",
+  "species": "perro",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "3kg",
+      "price": 19000,
+      "stock": 10,
+      "image": "/images/products/balanced-senior-raza-grande-3kg.webp"
+    },
+    {
+      "label": "15kg",
+      "price": 68000,
+      "stock": 10,
+      "image": "/images/products/balanced-senior-raza-grande-15kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/balanced-senior-raza-grande-3kg.webp",
+    "/images/products/balanced-senior-raza-grande-15kg.webp"
+  ],
+  "featured": false,
+  "inStock": true,
+  "tags": []
+}

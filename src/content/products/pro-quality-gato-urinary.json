@@ -1,0 +1,26 @@
+{
+  "name": "Pro Quality Gato Urinary",
+  "description": "Alimento seco Pro Quality Gato Urinary para gatos. Presentaciones de 7kg.",
+  "longDescription": "Pro Quality Gato Urinary es un alimento seco de la línea Maskotita, pensado para gatos.\n\nPresentaciones disponibles: 7kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 35000,
+  "category": "Alimentos Secos",
+  "brand": "Pro Quality",
+  "species": "gato",
+  "foodType": "seco",
+  "variants": [
+    {
+      "label": "7kg",
+      "price": 35000,
+      "stock": 10,
+      "image": "/images/products/pro-quality-gato-urinary-7kg.webp"
+    }
+  ],
+  "images": [
+    "/images/products/pro-quality-gato-urinary-7kg.webp"
+  ],
+  "featured": false,
+  "inStock": true,
+  "tags": [
+    "novedad"
+  ]
+}
