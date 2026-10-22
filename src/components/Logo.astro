@@ -1,13 +1,15 @@
 ---
 /**
- * LOGOTIPO — espacio reservado para la imagen oficial "Maskotita".
+ * LOGOTIPO — logotipo oficial de Maskotita.
  *
- * ⚠️  No se recrea el logotipo con CSS: las letras son personalizadas.
- *     Para poner el logo real, reemplazá el archivo:
+ * El archivo original (1536×1024) está en:
+ *     https://maskotita.com.ar/logo.png
  *
- *         public/images/logo-maskotita.svg
+ * Ya viene recortado a 800×253 y optimizado (~90 KB) en:
+ *     public/images/logo-maskotita.png
  *
- *     por el logotipo definitivo (PNG o SVG). Este componente no hace falta tocarlo.
+ * Para reemplazarlo por otra versión, poné el archivo acá y actualizá
+ * `width` y `height` (o `srcset`) con las medidas reales.
  */
 interface Props {
   class?: string;
@@ -16,13 +18,12 @@ interface Props {
 const { class: className = '' } = Astro.props;
 ---
 
-<!-- AQUÍ VA EL LOGO MASKOTITA -->
 <img
-  src="/images/logo-maskotita.svg"
-  alt="AQUÍ VA EL LOGO MASKOTITA"
+  src="/images/logo-maskotita.png"
+  alt="Maskotita"
   class={`logo-slot object-contain ${className}`}
-  width="200"
-  height="44"
+  width="800"
+  height="253"
   decoding="async"
   data-logo
 />
