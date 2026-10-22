@@ -18,7 +18,7 @@ y el sitio se vuelve a publicar solo. **No hay servidor ni base de datos**, es g
 
 | Sección | Archivo | Incluye |
 |---|---|---|
-| **Productos** | `src/content/products/<id>.json` | Nombre, descripciones, precio, precio anterior, categoría, marca, especie, tipo de alimento, kilos de regalo, presentaciones/variantes con su stock, imágenes (1 a 3), destacado, disponible, etiqueta e tags |
+| **Productos** | `src/content/products/<id>.json` | Nombre, descripciones, precio, precio anterior, categoría, marca, especie, tipo de alimento, kilos de regalo, presentaciones/variantes con su stock y su foto, imágenes (1 a 3), destacado, disponible, etiqueta e tags |
 | **Preguntas frecuentes** | `src/content/faqs/<id>.json` | Pregunta, respuesta, orden |
 | **Ajustes de la tienda** | `src/content/settings/store.json` | Nombre, frase, descripción SEO, ciudad, dirección, WhatsApp, saludo del pedido, email, redes, nota de envío, envío gratis, cuotas, reintegro y códigos de descuento |
 
@@ -178,6 +178,9 @@ optimizadas:
   colección *Liquidación* (si el descuento llega al 15%) aparecen solas.
 - **Marcar «Nuevo»:** cargá *Etiqueta sobre la imagen* = `Nuevo` y agregá el tag *Novedad*.
 - **Subir fotos:** en *Imágenes*, botón de subir o arrastrar. Hasta 3 por producto.
+- **Fotos por peso:** en *Presentaciones*, cada peso tiene su campo *Foto de esta
+  presentación*. Si la cargás, la foto principal cambia sola cuando el cliente elige
+  ese peso. Sirve para mostrar el bolsa correcta de cada presentación.
 - **WhatsApp:** Ajustes de la tienda → *WhatsApp* (solo números, sin `+` ni espacios).
 - **Borrar:** cada entrada tiene *Delete* (queda en el historial de Git y se puede recuperar).
 
@@ -196,6 +199,8 @@ Los cambios tardan **~1 minuto** en verse (GitHub Actions reconstruye el sitio).
   necesita que `document.body` ya exista. En el `<head>` la inicialización
   revienta y la página queda en blanco **sin errores en la consola**.
 - **Sin `type="module"`:** Sveltia no es un módulo ES y avisa por consola.
+- **Foto por variante:** el campo `image` de cada presentación es opcional. El sitio
+  lo usa para cambiar la foto de la galería y la del carrito al elegir el peso.
 - **Validación:** los productos se validan con Zod al compilar
   (`src/lib/product-schema.ts`) y los ajustes con `src/lib/store-schema.ts`
   (test en `src/lib/store-schema.test.ts`). Si algo queda mal, el build falla y el
