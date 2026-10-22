@@ -157,14 +157,12 @@ case "${1:-up}" in
       dim "  3. Tu sitio: https://maskotita.github.io/"
     else
       warn "Falló el push con el usuario '${AUTH_USER}'. Reintento con '${GIT_USER}'…"
-      if [ -n "${GITHUB_TOKEN:-}" ] || true; then
-        TOKEN_SAVED="$(printf 'protocol=https\nhost=github.com\n\n' | GIT_TERMINAL_PROMPT=0 git credential fill 2>/dev/null | sed -n 's/^password=//p' || true)"
-        if [ -n "$TOKEN_SAVED" ]; then
-          save_credentials "$TOKEN_SAVED" "$GIT_USER"
-          if git push -u origin main; then
-            log "Listo. Tu sitio: https://maskotita.github.io/"
-            exit 0
-          fi
+      TOKEN_SAVED="$(printf 'protocol=https\nhost=github.com\n\n' | GIT_TERMINAL_PROMPT=0 git credential fill 2>/dev/null | sed -n 's/^password=//p' || true)"
+      if [ -n "$TOKEN_SAVED" ]; then
+        save_credentials "$TOKEN_SAVED" "$GIT_USER"
+        if git push -u origin main; then
+          log "Listo. Tu sitio: https://maskotita.github.io/"
+          exit 0
         fi
       fi
       err "No se pudo subir. Causas habituales:"
