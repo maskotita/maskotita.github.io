@@ -1,8 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import ProductCard from './ProductCard.astro';
-import { BRANDS, CATEGORIES } from '../lib/nav';
 import { normalize, slugifyCategory } from '../lib/catalog';
+import { buildTaxonomy, toTaxable } from '../lib/taxonomy';
 
 interface Props {
   title?: string;
@@ -16,12 +16,10 @@ const products = (await getCollection('products')).sort((a, b) =>
   a.data.name.localeCompare(b.data.name, 'es'),
 );
 
-const usedCategories = CATEGORIES.filter((c) =>
-  products.some((p) => slugifyCategory(p.data.category) === c.slug),
-);
-const usedBrands = BRANDS.filter((b) =>
-  products.some((p) => slugifyCategory(p.data.brand) === b.slug),
-);
+/* Las categorías y las marcas salen del catálogo: si el panel agrega una
+   nueva, aparece sola en los filtros. */
+const usedCategories = buildTaxonomy(products.map(toTaxable), 'category');
+const usedBrands = buildTaxonomy(products.map(toTaxable), 'brand');
 
 /* Los filtros de tipo y de promoción sólo aparecen si hay productos que los usen. */
 const FOOD_TYPES: { value: string; label: string }[] = [

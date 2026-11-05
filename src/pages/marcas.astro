@@ -1,17 +1,14 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { BRANDS } from '../lib/nav';
-import { slugifyCategory } from '../lib/catalog';
+import { buildTaxonomy, toTaxable } from '../lib/taxonomy';
 
 const products = await getCollection('products');
-const brands = BRANDS.map((brand) => ({
-  ...brand,
-  count: products.filter((p) => slugifyCategory(p.data.brand) === brand.slug).length,
-})).filter((b) => b.count > 0);
+const brands = buildTaxonomy(products.map(toTaxable), 'brand');
+const resumen = brands.map((brand) => brand.name).join(', ');
 ---
 
-<BaseLayout title="Marcas" description="Comprá por marca: Agility, Balanced, Estampa, Gran Pastor, Gran Persa, Ken-L, Pro Quality, Rey Can, Rey Cat y Sabrositos.">
+<BaseLayout title="Marcas" description={`Comprá por marca: ${resumen}.`}>
   <section class="container-page py-10">
     <h1 class="text-3xl font-extrabold tracking-tight">Marcas</h1>
     <p class="mt-1 text-sm text-muted">Elegí tu marca favorita y filtrá el catálogo.</p>

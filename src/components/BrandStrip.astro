@@ -1,5 +1,9 @@
 ---
-import { BRANDS } from '../lib/nav';
+import { getCollection } from 'astro:content';
+import { buildTaxonomy, toTaxable } from '../lib/taxonomy';
+
+const products = await getCollection('products');
+const brands = buildTaxonomy(products.map(toTaxable), 'brand');
 ---
 
 <section class="container-page py-10">
@@ -10,7 +14,7 @@ import { BRANDS } from '../lib/nav';
 
   <div class="no-scrollbar -mx-1 flex snap-x gap-3 overflow-x-auto px-1 pb-1">
     {
-      BRANDS.map((brand) => (
+      brands.map((brand) => (
         <a
           href={`/productos/?marca=${brand.slug}`}
           class="flex h-20 w-40 shrink-0 snap-start items-center justify-center rounded-[var(--radius-lg)] border border-border bg-white px-4 text-center text-lg font-extrabold uppercase tracking-wide text-muted transition-colors hover:border-brand-secondary hover:text-brand-secondary"

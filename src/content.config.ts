@@ -2,6 +2,22 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 import { productSchema } from './lib/product-schema';
+import { assertStoreSettings } from './lib/store-schema';
+import storeSettings from './content/settings/store.json';
+
+/**
+ * Validación de los ajustes de la tienda (src/content/settings/store.json).
+ *
+ * Este archivo lo edita el panel de administración (/admin → Ajustes de la
+ * tienda). Se valida acá, y no en src/config.ts, porque content.config.ts lo
+ * carga Astro SIEMPRE al compilar: si un dato quedó mal (WhatsApp con "+",
+ * moneda de dos letras, teléfono corto) el build frena con el detalle de qué
+ * corregir, en vez de publicar un sitio roto.
+ *
+ * Importarlo desde config.ts no serviría: ese módulo también lo usan los
+ * scripts del navegador, y Zod sumaría 85 KB de JavaScript al sitio.
+ */
+assertStoreSettings(storeSettings);
 
 /**
  * Preguntas frecuentes.

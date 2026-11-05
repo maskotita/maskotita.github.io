@@ -1,12 +1,11 @@
 ---
 import { getCollection } from 'astro:content';
 import { STORE } from '../config';
-import { NAV } from '../lib/nav';
-import { navWithCollections } from '../lib/products';
+import { buildNav } from '../lib/products';
 import Logo from './Logo.astro';
 
 const products = await getCollection('products');
-const nav = navWithCollections(products, NAV);
+const nav = buildNav(products);
 const searchIndex = products.map((p) => ({
   id: p.id,
   name: p.data.name,

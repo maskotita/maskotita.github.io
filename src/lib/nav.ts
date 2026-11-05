@@ -8,6 +8,11 @@ export interface NavLink {
 export interface NavItem {
   label: string;
   href: string;
+  /**
+   * Especie del item. Si está definido, sus sub-links se arman con las
+   * categorías que el catálogo tiene para esa especie (ver navWithCatalog).
+   */
+  species?: 'perro' | 'gato';
   children?: NavLink[];
 }
 
@@ -47,55 +52,25 @@ export const COLLECTIONS: CollectionDef[] = [
   },
 ];
 
+/**
+ * Menú principal.
+ *
+ * Los items de especie ("Perros", "Gatos") no traen sub-links-written: se
+ * arman en runtime con las categorías que hay en el catálogo, así una
+ * categoría nueva cargada desde el panel aparece sola en el menú.
+ */
 export const NAV: NavItem[] = [
   { label: 'Inicio', href: '/' },
   {
     label: 'Perros',
     href: '/perros',
-    children: [
-      { label: 'Alimentos Secos', href: '/productos/?especie=perro&cat=alimentos-secos' },
-    ],
+    species: 'perro',
   },
   {
     label: 'Gatos',
     href: '/gatos',
-    children: [
-      { label: 'Alimentos Secos', href: '/productos/?especie=gato&cat=alimentos-secos' },
-    ],
+    species: 'gato',
   },
   { label: 'Marcas', href: '/marcas' },
   { label: 'Liquidación', href: '/collections/liquidacion' },
-];
-
-export interface Brand {
-  name: string;
-  slug: string;
-}
-
-export const BRANDS: Brand[] = [
-  { name: 'Agility', slug: 'agility' },
-  { name: 'Balanced', slug: 'balanced' },
-  { name: 'Estampa', slug: 'estampa' },
-  { name: 'Gran Pastor', slug: 'gran-pastor' },
-  { name: 'Gran Persa', slug: 'gran-persa' },
-  { name: 'Ken-L', slug: 'ken-l' },
-  { name: 'Pro Quality', slug: 'pro-quality' },
-  { name: 'Rey Can', slug: 'rey-can' },
-  { name: 'Rey Cat', slug: 'rey-cat' },
-  { name: 'Sabrositos', slug: 'sabrositos' },
-];
-
-export interface Category {
-  name: string;
-  slug: string;
-}
-
-export const CATEGORIES: Category[] = [
-  { name: 'Alimentos Secos', slug: 'alimentos-secos' },
-  { name: 'Alimentos Húmedos', slug: 'alimentos-humedos' },
-  { name: 'Camas', slug: 'camas' },
-  { name: 'Higiene', slug: 'higiene' },
-  { name: 'Snacks', slug: 'snacks' },
-  { name: 'Piedras Sanitarias', slug: 'piedras-sanitarias' },
-  { name: 'Rascadores', slug: 'rascadores' },
 ];

@@ -201,6 +201,9 @@ optimizadas:
   presentación*. Si la cargás, la foto principal cambia sola cuando el cliente elige
   ese peso. Sirve para mostrar el bolsa correcta de cada presentación.
 - **WhatsApp:** Ajustes de la tienda → *WhatsApp* (solo números, sin `+` ni espacios).
+- **Email y redes:** Ajustes de la tienda → *Email*, *Instagram* y *Facebook*
+  aparecen en el pie de página. Se pueden dejar vacíos (se ocultan) y el
+  Instagram/Facebook aceptan el usuario pelado (`maskotita`) o la URL completa.
 - **Borrar:** cada entrada tiene *Delete* (queda en el historial de Git y se puede recuperar).
 
 Los cambios tardan **~1 minuto** en verse (GitHub Actions reconstruye el sitio).
@@ -221,9 +224,17 @@ Los cambios tardan **~1 minuto** en verse (GitHub Actions reconstruye el sitio).
 - **Foto por variante:** el campo `image` de cada presentación es opcional. El sitio
   lo usa para cambiar la foto de la galería y la del carrito al elegir el peso.
 - **Validación:** los productos se validan con Zod al compilar
-  (`src/lib/product-schema.ts`) y los ajustes con `src/lib/store-schema.ts`
-  (test en `src/lib/store-schema.test.ts`). Si algo queda mal, el build falla y el
-  sitio no se rompe: GitHub Pages conserva la última versión publicada.
+  (`src/lib/product-schema.ts`) y los ajustes de la tienda también, con
+  `src/lib/store-schema.ts`: la validación corre en `src/content.config.ts`, que
+  Astro carga siempre al compilar, así que si dejás un dato mal (WhatsApp con
+  `+`, moneda de dos letras) el **build falla con el detalle de qué corregir** y
+  GitHub Pages conserva la última versión publicada.
+- **Categorías y marcas:** no hay listas escritas en el código. Se arman con lo
+  que hay cargado en los productos, así que una categoría o marca nueva
+  (por ejemplo *Higiene* o *Piedras Sanitarias*) aparece sola en los filtros
+  del catálogo, en el menú de Perros/Gatos y en la página de Marcas. Sólo
+  tenés que escribirla con el **mismo nombre** en los productos que la usan:
+  si escribís *Higiene* y *higiene*, el sitio las muestra juntas.
 - **Campos vacíos:** el panel guarda los vacíos como `""`, `null` o `[]`; el sitio los
   interpreta como «sin valor» antes de validar (`pruneEmpty` en `src/content.config.ts`).
   Además, `output.omit_empty_optional_fields: true` evita que se escriban en el JSON
