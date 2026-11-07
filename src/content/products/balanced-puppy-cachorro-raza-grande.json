@@ -1,34 +1,28 @@
 {
   "name": "Balanced Puppy Cachorro Raza Grande",
-  "description": "Alimento seco Balanced Puppy Cachorro Raza Grande para perros. Presentaciones de 1kg, 3kg, 15kg, 20kg.",
-  "longDescription": "Balanced Puppy Cachorro Raza Grande es un alimento seco de la línea Maskotita, pensado para perros.\n\nPresentaciones disponibles: 1kg, 3kg, 15kg, 20kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
-  "price": 7000,
+  "description": "Alimento seco Balanced Puppy Cachorro Raza Grande para perros. Presentaciones de 3kg, 15kg, 20kg.",
+  "longDescription": "Balanced Puppy Cachorro Raza Grande es un alimento seco de la línea Maskotita, pensado para perros.\n\nPresentaciones disponibles: 3kg, 15kg, 20kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 107000,
   "category": "Alimentos Secos",
   "brand": "Balanced",
   "species": "perro",
   "foodType": "seco",
   "variants": [
     {
-      "label": "1kg",
-      "price": 7000,
-      "stock": 10,
-      "image": "/images/products/balanced-puppy-cachorro-raza-grande-1kg.webp"
-    },
-    {
       "label": "3kg",
-      "price": 20000,
+      "price": 21500,
       "stock": 10,
       "image": "/images/products/balanced-puppy-cachorro-raza-grande-3kg.webp"
     },
     {
       "label": "15kg",
-      "price": 70000,
+      "price": 83400,
       "stock": 10,
       "image": "/images/products/balanced-puppy-cachorro-raza-grande-15kg.webp"
     },
     {
       "label": "20kg",
-      "price": 90000,
+      "price": 10700,
       "stock": 10,
       "image": "/images/products/balanced-puppy-cachorro-raza-grande-20kg.webp"
     }
@@ -39,6 +33,5 @@
     "/images/products/balanced-puppy-cachorro-raza-grande-15kg.webp"
   ],
   "featured": false,
-  "inStock": true,
-  "tags": []
+  "inStock": true
 }
