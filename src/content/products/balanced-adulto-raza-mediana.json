@@ -2,7 +2,7 @@
   "name": "Balanced Adulto Raza Mediana",
   "description": "Alimento seco Balanced Adulto Raza Mediana para perros. Presentaciones de 3kg, 12kg, 20kg.",
   "longDescription": "Balanced Adulto Raza Mediana es un alimento seco de la línea Maskotita, pensado para perros.\n\nPresentaciones disponibles: 3kg, 12kg, 20kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
-  "price": 19000,
+  "price": 87000,
   "category": "Alimentos Secos",
   "brand": "Balanced",
   "species": "perro",
@@ -10,19 +10,19 @@
   "variants": [
     {
       "label": "3kg",
-      "price": 19000,
+      "price": 20000,
       "stock": 10,
       "image": "/images/products/balanced-adulto-raza-mediana-3kg.webp"
     },
     {
       "label": "12kg",
-      "price": 51000,
+      "price": 60000,
       "stock": 10,
       "image": "/images/products/balanced-adulto-raza-mediana-12kg.webp"
     },
     {
       "label": "20kg",
-      "price": 74000,
+      "price": 87000,
       "stock": 10,
       "image": "/images/products/balanced-adulto-raza-mediana-20kg.webp"
     }
