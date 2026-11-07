@@ -2,7 +2,7 @@
   "name": "Gran Pastor Adulto Raza Pequeña",
   "description": "Alimento seco Gran Pastor Adulto Raza Pequeña para perros. Presentaciones de 15kg.",
   "longDescription": "Gran Pastor Adulto Raza Pequeña es un alimento seco de la línea Maskotita, pensado para perros.\n\nPresentaciones disponibles: 15kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
-  "price": 46000,
+  "price": 42000,
   "category": "Alimentos Secos",
   "brand": "Gran Pastor",
   "species": "perro",
@@ -10,7 +10,7 @@
   "variants": [
     {
       "label": "15kg",
-      "price": 46000,
+      "price": 42000,
       "stock": 10,
       "image": "/images/products/gran-pastor-adulto-raza-pequena-15kg.webp"
     }
@@ -19,6 +19,5 @@
     "/images/products/gran-pastor-adulto-raza-pequena-15kg.webp"
   ],
   "featured": false,
-  "inStock": true,
-  "tags": []
+  "inStock": true
 }
