@@ -9,16 +9,16 @@
   "foodType": "seco",
   "variants": [
     {
+      "label": "20kg",
+      "price": 75000,
+      "stock": 10,
+      "image": "/images/products/agility-adulto-20kg.webp"
+    },
+    {
       "label": "3kg",
       "price": 15400,
       "stock": 10,
       "image": "/images/products/agility-adulto-3kg.webp"
-    },
-    {
-      "label": "20kg",
-      "price": 63000,
-      "stock": 10,
-      "image": "/images/products/agility-adulto-20kg.webp"
     }
   ],
   "images": [
