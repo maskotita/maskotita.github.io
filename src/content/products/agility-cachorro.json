@@ -2,7 +2,7 @@
   "name": "Agility Cachorro",
   "description": "Alimento seco Agility Cachorro para perros. Presentaciones de 3kg, 15kg.",
   "longDescription": "Agility Cachorro es un alimento seco de la línea Maskotita, pensado para perros.\n\nPresentaciones disponibles: 3kg, 15kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
-  "price": 15000,
+  "price": 67000,
   "category": "Alimentos Secos",
   "brand": "Agility",
   "species": "perro",
@@ -10,13 +10,13 @@
   "variants": [
     {
       "label": "3kg",
-      "price": 15000,
+      "price": 17500,
       "stock": 10,
       "image": "/images/products/agility-cachorro-3kg.webp"
     },
     {
       "label": "15kg",
-      "price": 58000,
+      "price": 67000,
       "stock": 10,
       "image": "/images/products/agility-cachorro-15kg.webp"
     }
