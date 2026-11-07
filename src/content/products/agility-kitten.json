@@ -2,7 +2,7 @@
   "name": "Agility Kitten",
   "description": "Alimento seco Agility Kitten para gatos. Presentaciones de 1.5kg, 10kg.",
   "longDescription": "Agility Kitten es un alimento seco de la línea Maskotita, pensado para gatos.\n\nPresentaciones disponibles: 1.5kg, 10kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
-  "price": 13000,
+  "price": 77800,
   "category": "Alimentos Secos",
   "brand": "Agility",
   "species": "gato",
@@ -10,13 +10,13 @@
   "variants": [
     {
       "label": "1.5kg",
-      "price": 13000,
+      "price": 15400,
       "stock": 10,
       "image": "/images/products/agility-kitten-1-5kg.webp"
     },
     {
       "label": "10kg",
-      "price": 67000,
+      "price": 77600,
       "stock": 10,
       "image": "/images/products/agility-kitten-10kg.webp"
     }
