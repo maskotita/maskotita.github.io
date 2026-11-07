@@ -2,7 +2,7 @@
   "name": "Balanced Control de Peso",
   "description": "Alimento seco Balanced Control de Peso para perros y gatos. Presentaciones de 3kg, 12kg, 20kg.",
   "longDescription": "Balanced Control de Peso es un alimento seco de la línea Maskotita, pensado para perros y gatos.\n\nPresentaciones disponibles: 3kg, 12kg, 20kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
-  "price": 20000,
+  "price": 108500,
   "category": "Alimentos Secos",
   "brand": "Balanced",
   "species": "ambos",
@@ -10,19 +10,19 @@
   "variants": [
     {
       "label": "3kg",
-      "price": 20000,
+      "price": 23000,
       "stock": 10,
       "image": "/images/products/balanced-control-de-peso-3kg.webp"
     },
     {
       "label": "12kg",
-      "price": 56000,
+      "price": 66000,
       "stock": 10,
       "image": "/images/products/balanced-control-de-peso-12kg.webp"
     },
     {
       "label": "20kg",
-      "price": 92000,
+      "price": 108500,
       "stock": 10,
       "image": "/images/products/balanced-control-de-peso-20kg.webp"
     }
