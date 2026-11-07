@@ -1,28 +1,22 @@
 {
   "name": "Agility Control De Peso",
-  "description": "Alimento seco Agility Control De Peso para perros y gatos. Presentaciones de 1.5kg, 3kg, 10kg.",
-  "longDescription": "Agility Control De Peso es un alimento seco de la línea Maskotita, pensado para perros y gatos.\n\nPresentaciones disponibles: 1.5kg, 3kg, 10kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
-  "price": 14000,
+  "description": "Alimento seco Agility Control De Peso para perros y gatos. Presentaciones de 1.5kg, 10kg.",
+  "longDescription": "Agility Control De Peso es un alimento seco de la línea Maskotita, pensado para perros y gatos.\n\nPresentaciones disponibles: 1.5kg,10kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 83200,
   "category": "Alimentos Secos",
   "brand": "Agility",
-  "species": "ambos",
+  "species": "gato",
   "foodType": "seco",
   "variants": [
     {
       "label": "1.5kg",
-      "price": 14000,
+      "price": 16400,
       "stock": 10,
       "image": "/images/products/agility-control-de-peso-1-5kg.webp"
     },
     {
-      "label": "3kg",
-      "price": 17000,
-      "stock": 10,
-      "image": "/images/products/agility-control-de-peso-3kg.webp"
-    },
-    {
       "label": "10kg",
-      "price": 70000,
+      "price": 83500,
       "stock": 10,
       "image": "/images/products/agility-control-de-peso-10kg.webp"
     }
@@ -33,6 +27,5 @@
     "/images/products/agility-control-de-peso-10kg.webp"
   ],
   "featured": false,
-  "inStock": true,
-  "tags": []
+  "inStock": true
 }
