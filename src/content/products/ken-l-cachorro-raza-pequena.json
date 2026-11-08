@@ -2,7 +2,7 @@
   "name": "Ken-L Cachorro Raza Pequeña",
   "description": "Alimento seco Ken-L Cachorro Raza Pequeña para perros. Presentaciones de 3kg, 7.5kg.",
   "longDescription": "Ken-L Cachorro Raza Pequeña es un alimento seco de la línea Maskotita, pensado para perros.\n\nPresentaciones disponibles: 3kg, 7.5kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
-  "price": 13000,
+  "price": 52500,
   "category": "Alimentos Secos",
   "brand": "Ken-L",
   "species": "perro",
@@ -12,11 +12,11 @@
       "label": "3kg",
       "price": 13000,
       "stock": 10,
-      "image": "/images/products/ken-l-cachorro-raza-pequena-3kg.webp"
+      "image": "/images/uploads/42760.jpg"
     },
     {
       "label": "7.5kg",
-      "price": 29000,
+      "price": 52500,
       "stock": 10,
       "image": "/images/products/ken-l-cachorro-raza-pequena-7-5kg.webp"
     }
@@ -26,6 +26,5 @@
     "/images/products/ken-l-cachorro-raza-pequena-7-5kg.webp"
   ],
   "featured": false,
-  "inStock": true,
-  "tags": []
+  "inStock": true
 }
