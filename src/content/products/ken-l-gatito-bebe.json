@@ -1,24 +1,28 @@
 {
   "name": "Ken-L Gatito Bebe",
-  "description": "Alimento seco Ken-L Gatito Bebe para gatos. Presentaciones de 7.5kg.",
-  "longDescription": "Ken-L Gatito Bebe es un alimento seco de la línea Maskotita, pensado para gatos.\n\nPresentaciones disponibles: 7.5kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
-  "price": 47000,
+  "description": "Alimento seco Ken-L Gatito Bebe para gatos. Presentaciones de 1.5kg, 8kg.",
+  "longDescription": "Ken-L Gatito Bebe es un alimento seco de la línea Maskotita, pensado para gatos.\n\nPresentaciones disponibles: 1.5kg, 8kg.\n\n- Producto de la línea Maskotita, controlado por el depósito.\n- Consultá stock y disponibilidad al confirmar el pedido por WhatsApp.\n- Envío gratis en compras superiores a $30.000 (ajustable desde el panel).",
+  "price": 49100,
   "category": "Alimentos Secos",
   "brand": "Ken-L",
   "species": "gato",
   "foodType": "seco",
   "variants": [
     {
-      "label": "7.5kg",
-      "price": 47000,
+      "label": "8kg",
+      "price": 49100,
       "stock": 10,
-      "image": "/images/products/ken-l-gatito-bebe-7-5kg.webp"
+      "image": "/images/uploads/42767.jpg"
+    },
+    {
+      "label": "1.5kg",
+      "price": 12600,
+      "stock": 29
     }
   ],
   "images": [
     "/images/products/ken-l-gatito-bebe-7-5kg.webp"
   ],
   "featured": false,
-  "inStock": true,
-  "tags": []
+  "inStock": true
 }
